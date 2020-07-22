@@ -63,7 +63,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button">Заказать услугу</button>
+          <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -501,7 +501,45 @@
             </button>
           </form>
         </div>
+
+        <!-- Модальное окно -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <b class="modal-appeal">Оставьте свои данные, мы вам перезвоним</b>
+            <ul class="form-list">
+              <li class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Иван Иваныч" autofocus />
+              </li>
+              <li class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+              </li>
+              <li class="form-field">
+                <label for="mail">Почта</label>
+                <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+              </li>
+            </ul>
+            <p>
+              <label for="comment"></label>
+              <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
+            </p>
+            <p>
+              <input type="checkbox" name="policy" id="policy" />
+              <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="./">Условия договора</a> </label>
+            </p>
+
+            <button class="form-send">Отправить</button>
+            <a class="modal-close" data-modal-close>
+              <svg class="close-icon" width="30" height="30">
+                <use href="./img/sprite2.svg#icon-close"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
