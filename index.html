@@ -30,7 +30,9 @@
             <li class="item-nav">
               <a class="site-nav-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item-nav"><a class="site-nav-link" href="">Контакты</a></li>
+            <li class="item-nav">
+              <a class="site-nav-link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -142,7 +144,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="offer-link" clink" href="">
+              <a class="offer-link" href="">
                 <img
                   src="./img/box_2.jpg"
                   alt="Изображение - мобильные приложения"
@@ -151,7 +153,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="offer-link" clink" href="">
+              <a class="offer-link" href="">
                 <img
                   src="./img/box_3.jpg"
                   alt="Изображение - дизайнерские решения"
@@ -504,32 +506,57 @@
 
         <!-- Модальное окно -->
         <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <b class="modal-appeal">Оставьте свои данные, мы вам перезвоним</b>
+          <div class="modal-form">
+            <b class="form-appeal">Оставьте свои данные, мы вам перезвоним</b>
             <ul class="form-list">
               <li class="form-field">
                 <label for="name">Имя</label>
-                <input type="text" name="name" id="name" placeholder="Иван Иваныч" autofocus />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Иван Иваныч"
+                  autofocus
+                />
               </li>
               <li class="form-field">
                 <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="+30**-000-00-00"
+                />
               </li>
               <li class="form-field">
                 <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="my@mail.com"
+                />
               </li>
             </ul>
             <p>
               <label for="comment"></label>
-              <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
+              <textarea
+                class="comment"
+                name="comment"
+                id="comment"
+                rows="8"
+                placeholder="Комментарий"
+              ></textarea>
             </p>
-            <p>
+            <p class="checkbox">
               <input type="checkbox" name="policy" id="policy" />
-              <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="./">Условия договора</a> </label>
+              <label for="policy"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="checkbox-link" href="./">Условия договора</a>
+              </label>
             </p>
 
-            <button class="form-send">Отправить</button>
+            <button class="button-send">Отправить</button>
             <a class="modal-close" data-modal-close>
               <svg class="close-icon" width="30" height="30">
                 <use href="./img/sprite2.svg#icon-close"></use>
